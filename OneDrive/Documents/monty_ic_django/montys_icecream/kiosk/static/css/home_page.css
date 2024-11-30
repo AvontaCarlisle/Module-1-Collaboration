@@ -1,0 +1,12 @@
+html{
+    background-color: burlywood;
+}
+title{
+    font-size: 55px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: violet;
+}
+button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(236, 68, 236);
+}
