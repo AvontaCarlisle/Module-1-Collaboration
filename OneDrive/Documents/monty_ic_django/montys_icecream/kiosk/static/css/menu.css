@@ -1,0 +1,75 @@
+/* Page Background */
+html {
+    background-color: rgb(247, 241, 241); /* Semi-transparent green */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Default font for the page */
+    color: white; /* Default text color */
+    margin: 0;
+}
+
+/* Header Title */
+h1 {
+    font-size: 55px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: violet;
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 2px 2px 5px black;
+}
+
+/* Buttons */
+button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(160, 9, 135);
+    background-color: rgb(236, 68, 236); /* Bright pink */
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+/* Button Hover Effects */
+button:hover {
+    transform: scale(1.1); /* Slightly enlarge button */
+    background-color: rgb(255, 182, 193); /* Light pink */
+    color: black; /* Change text color on hover */
+}
+
+/* Images Inside Buttons */
+button img {
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    border: 2px solid white;
+}
+
+/* Center Content */
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px; /* Smaller header for small screens */
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    button img {
+        width: 60px;
+        height: 60px;
+    }
+}

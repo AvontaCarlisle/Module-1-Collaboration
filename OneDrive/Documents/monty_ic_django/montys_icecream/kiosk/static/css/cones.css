@@ -1,0 +1,31 @@
+/* Global Styles */
+html {
+    background-color: rgba(19, 94, 0, 0.7);
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1, h2 {
+    font-size: 2.5em;
+    color: #F3D7E2;
+    margin-top: 40px;
+    font-family: 'Verdana', Geneva, sans-serif;
+}
+
+p {
+    font-size: 1.1em;
+    color: #F9D6F7;
+    margin: 20px auto;
+    max-width: 700px;
+}
+
+/* Cones Section Styling */
+.cones-section {
+    
+}

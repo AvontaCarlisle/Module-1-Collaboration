@@ -19,5 +19,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('kiosk.urls')),
-    ]
+    path('kiosk/', include('kiosk.urls')),  # This includes all the URLs from the 'kiosk' app
+]
+

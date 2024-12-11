@@ -1,0 +1,90 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cakes - Monty's Ice Cream Shop</title>
+    <link rel="stylesheet" href="{% static 'css/cakes.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Monty's Ice Cream Shop - Cakes Menu</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'menu' %}">Back to Menu</a></li>
+                <li><a href="{% url 'cones' %}">Cones</a></li>
+                <li><a href="{% url 'milkshakes' %}">Milkshakes</a></li>
+                <li><a href="{% url 'froyo' %}">Frozen Yogurt</a></li>
+                <li><a href="{% url 'sandwiches' %}">Sandwiches</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Our Delicious Cakes</h2>
+        
+        <div class="cake-item">
+            <img src="{% static 'images/chocolate_cake.jpg' %}" alt="Chocolate Cake" width="300">
+            <h3>Chocolate Cake</h3>
+            <p>Price: $12.00</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="cake-item">
+            <img src="{% static 'images/vanilla_cake.jpg' %}" alt="Vanilla Cake" width="300">
+            <h3>Vanilla Cake</h3>
+            <p>Price: $12.00</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="cake-item">
+            <img src="{% static 'images/strawberry_cake.jpg' %}" alt="Strawberry Cake" width="300">
+            <h3>Strawberry Cake</h3>
+            <p>Price: $12.00</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="cake-item">
+            <img src="{% static 'images/mango_cake.jpg' %}" alt="Mango Cake" width="300">
+            <h3>Mango Cake</h3>
+            <p>Price: $12.00</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="cake-item">
+            <img src="{% static 'images/birthday_cake_cake.jpg' %}" alt="BirthDay Cake" width="300">
+            <h3>BrithDay Cake</h3>
+            <p>Price: $12.00</p>
+            <button>Add to Cart</button>
+        </div>
+       
+        <div class="cake-item">
+            <img src="{% static 'images/c&c_cake.jpg' %}" alt="Cookies & Cream Cake" width="300">
+            <h3>Cookies & Cream Cake</h3>
+            <p>Price: $12.00</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="cake-item">
+            <img src="{% static 'images/almond_joy_cake.jpg' %}" alt="Almond Joy Cake" width="300">
+            <h3>Almond Joy Cake</h3>
+            <p>Price: $12.00</p>
+            <button>Add to Cart</button>
+        </div>
+
+                <div class="cake-item">
+            <img src="{% static 'images/apple_py_cake.jpg' %}" alt= "Apple Py Cake" width="300">
+            <h3>Apple Py Cake</h3>
+            <p>Price: $12.00</p>
+            <button>Add to Cart</button>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Monty's Ice Cream Shop. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

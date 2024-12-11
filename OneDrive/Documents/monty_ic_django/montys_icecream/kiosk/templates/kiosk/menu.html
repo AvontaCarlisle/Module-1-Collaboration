@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Monty Menu</title>
+        <link rel="stylesheet" href="{% static 'css/menu.css' %}">
+    </head>
+    <body>
+        <header>
+            <h1>Kiosk Menu</h1>
+        </header>
+        
+        <main>
+            <div class="menu-container">
+                <button class="menu-button" onclick="location.href='cones.html'">
+                    <img src="{% static 'images/cone_icon.jpg' %}" alt="Cones">
+                    <span>Cones</span>
+                </button>
+                
+                <button class="menu-button" onclick="location.href='cakes.html'">
+                    <img src="{% static 'images/cake_icon.jpg' %}" alt="Cakes">
+                    <span>Cakes</span>
+                </button>
+                
+                <button class="menu-button" onclick="location.href='milkshakes.html'">
+                    <img src="{% static 'images/milkshake_icon.jpg' %}" alt="Milkshakes">
+                    <span>Milkshakes</span>
+                </button>
+                
+                <button class="menu-button" onclick="location.href='froyo.html'">
+                    <img src="{% static 'images/froyo_icon.jpg' %}" alt="Froyo">
+                    <span>Froyo</span>
+                </button>
+                
+                <button class="menu-button" onclick="location.href='sandwiches.html'">
+                    <img src="{% static 'images/icecream_sandwich_icon.jpg' %}" alt="Sandwiches">
+                    <span>Sandwiches</span>
+                </button>
+            </div>
+        </main>
+    </body>
+</html>

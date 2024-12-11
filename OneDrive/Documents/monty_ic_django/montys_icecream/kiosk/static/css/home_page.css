@@ -1,12 +1,86 @@
-html{
-    background-color: burlywood;
+/* Global Styles */
+html {
+    background-color: rgba(19, 94, 0, 0.7);
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
 }
-title{
-    font-size: 55px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: violet;
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
 }
-button{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(236, 68, 236);
+
+h1 {
+    font-size: 3em;
+    color: #F3D7E2;
+    margin-top: 30px;
+    font-family: 'Verdana', Geneva, sans-serif;
+}
+
+p {
+    font-size: 1.2em;
+    color: #f9d6f7;
+    margin: 20px auto;
+    max-width: 700px;
+}
+
+/* Logo Styles */
+.logo-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Button Styles */
+button {
+    background-color: rgba(236, 68, 236, 0.8);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin: 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgba(236, 68, 236, 1);
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Section Styling */
+.intro {
+    background-color: rgba(19, 94, 0, 0.5);
+    padding: 40px;
+    margin-top: 20px;
+    font-size: 1.1em;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgba(19, 94, 0, 0.8);
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em;
 }

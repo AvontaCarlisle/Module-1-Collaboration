@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Monty's Ice Cream Shop</title>
+    <link rel="stylesheet" href="{% static 'css/homepage.css' %}">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="{% static 'images/python_logo(1).jpg' %}" alt="Monty's Ice Cream Shop Logo" class="logo">
+        </div>
+        <h1>Welcome to Monty's Ice Cream Shop!</h1>
+        <p>Your favorite place for delicious ice cream, cakes, and more.</p>
+    </header>
+
+    <main>
+        <section class="intro">
+            <p>Indulge in our wide variety of treats, from creamy ice cream to freshly baked cakes. We have something for everyone!</p>
+        </section>
+
+        <section class="buttons">
+            <button type="button" onclick="location.href='{% url 'menu' %}'" class="start-order-btn">Start Your Order</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Monty's Ice Cream Shop. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+

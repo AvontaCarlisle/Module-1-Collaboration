@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cones Menu | Monty's Ice Cream Shop</title>
+    <link rel="stylesheet" href="{% static 'css/cones.css' %}">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Monty's Ice Cream Shop!</h1>
+        <p>Explore our delicious ice cream cone options below.</p>
+    </header>
+
+    <main>
+        <section class="cones-section">
+            <h2>Our Special Cones</h2>
+
+            <div class="cone-items">
+                <!-- Example Cone Item 1 -->
+                <div class="cone-item">
+                    <img src="{% static 'images/almond_joy_cone.jpg' %}" alt="Waffle Cone">
+                    <h3>Almodn Joy</h3>
+                    <p>Almond Joy</p>
+                    <button type="button" onclick="location.href='{% url 'cone_detail' %}'">View Details</button>
+                </div>
+
+                <!-- Example Cone Item 2 -->
+                <div class="cone-item">
+                    <img src="{% static 'images/apple_py_cone.jpg' %}" alt="Sugar Cone">
+                    <h3>Apple Py</h3>
+                    <button type="button" onclick="location.href='{% url 'cone_detail' %}'">View Details</button>
+                </div>
+
+                <!-- Example Cone Item 3 -->
+                <div class="cone-item">
+                    <img src="{% static 'images/chocolate_cone.jpg' %}" alt="Chocolate Cone">
+                    <h3>Chocolate Cone</h3>
+                    <button type="button" onclick="location.href='{% url 'cone_detail' %}'">View Details</button>
+                </div>
+
+                <!-- Example Cone Item 4 -->
+                <div class="cone-item">
+                    <img src="{% static 'images/pretzel_cone.jpg' %}" alt="Pretzel Cone">
+                    <h3>Pretzel Cone</h3>
+                    <p>Try something different with our crunchy pretzel cone. Perfect for a salty-sweet combination with your ice cream.</p>
+                    <button type="button" onclick="location.href='{% url 'cone_detail' %}'">View Details</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Monty's Ice Cream Shop. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
